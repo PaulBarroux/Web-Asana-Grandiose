@@ -25,3 +25,25 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 );
+
+
+// styles.scss
+
+// Define the display font sizes
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+// Include Bootstrap's SCSS (if you're using the Bootstrap SCSS source files)
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// You can override the default display-1 class here
+.display-1 {
+  font-size: map-get($display-font-sizes, 1); // Adjust this to the size you want (e.g., 1 = 5rem)
+  font-weight: 700; // Optional, change the font-weight if needed
+}
