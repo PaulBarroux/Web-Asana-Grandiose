@@ -6,107 +6,213 @@
   <title>Navbar Figma</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
 
-    .navbar-brand {
-      font-weight: 700;
-      font-size: 20px;
-      text-transform: uppercase;
-      color: #8540F5 !important;
-      width: 120px;
-      height: 24px;
-    }
-
-    .nav-link {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      padding: 6px 16px;
-      color: #6c757d; /* Bootstrap secondary */
-    }
-
-    .nav-link.active,
-    .nav-link.text-purple {
-      color: #5227CC !important;
-    }
-
-    .navbar {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      background-color: white;
-    }
-
-    @media (max-width: 991.98px) {
-      .navbar-nav {
-        padding-top: 1rem;
-      }
-    }
-
-    .toast-container {
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          z-index: 1055; /* Ensures it stays on top */
-        }
-    
-        .toast-custom {
-          background-color: #7749F8;
-          color: #fff;
-          border: none;
-          border-radius: 8px;
-          font-weight: 600; /* Semi-bold */
-        }
-  </style>
 </head>
 <body>
-    
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid px-4">
-      <a class="navbar-brand" href="#">Grandiose</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse ms-4" id="navbarNav">
-        <ul class="navbar-nav d-flex align-items-center gap-1">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Welcome</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hire us !</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-        </ul>
-      </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">GRANDIOSE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hire Us !</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </div>
-  </nav>
-
-  <div class="toast-container">
-    <div class="toast toast-custom align-items-center show" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Hey, welcome back to Grandiose !
+        
+      <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hey, welcome back to Grandiose !          
         </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="container">
+        <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="16.7339" width="192" height="192" rx="24" transform="rotate(-5 0 16.7339)" fill="#520DC2"/>
+            <path d="M111.948 152.21C115.193 151.926 117.97 151.317 120.28 150.383C120.943 149.593 121.377 148.701 121.583 147.707C121.793 146.761 121.862 145.877 121.79 145.054C121.714 144.182 121.584 143.534 121.4 143.111C121.221 142.736 120.947 142.394 120.579 142.085C118.515 141.924 116.096 141.892 113.323 141.988C110.602 142.128 108.973 142.198 108.436 142.196C101.679 142.494 96.1638 142.489 91.8909 142.179C87.6138 141.821 83.87 140.587 80.6596 138.477C77.4449 136.318 75.6257 132.817 75.202 127.974C74.9732 125.358 75.6068 122.838 77.1028 120.414C78.5945 117.941 80.6202 115.714 83.1798 113.733C77.4594 111.94 72.7292 108.913 68.9891 104.653C65.2931 100.34 63.1274 94.5509 62.4918 87.2861C61.8605 80.0697 63.1945 74.121 66.494 69.4401C69.8377 64.7066 74.1433 61.2065 79.4109 58.9399C84.6785 56.6734 90.1214 55.2943 95.7395 54.8028C99.275 54.4935 102.768 54.5296 106.217 54.911C109.667 55.2924 112.9 55.9857 115.916 56.9907L111.177 38.8114C113.975 36.7609 117.577 35.5429 121.985 35.1573C125.181 34.8776 128.206 35.1498 131.06 35.9738C133.914 36.7978 136.154 38.139 137.781 39.9976C137.92 40.4735 138.036 41.2442 138.13 42.3097C138.477 46.2811 138.138 50.7762 137.113 55.7949C136.133 60.761 134.028 64.8738 130.799 68.1332C132.848 71.4678 134.048 75.145 134.4 79.1648C134.917 85.0735 134.255 90.6217 132.415 95.8094C130.624 100.993 127.251 105.387 122.295 108.993C117.336 112.55 110.667 114.695 102.288 115.428C99.8664 115.64 97.3353 115.715 94.6945 115.654C94.7611 118.088 95.5541 120.459 97.0736 122.766C103.502 120.935 108.724 119.819 112.739 119.419L117.673 118.914C124.357 118.329 129.454 118.298 132.964 118.821C136.823 119.41 139.814 121.247 141.938 124.331C144.111 127.411 145.401 131.275 145.808 135.925C146.443 143.19 144.749 149.487 140.726 154.817C136.755 160.191 131.34 164.398 124.48 167.438C117.67 170.474 110.317 172.338 102.423 173.028C95.1095 173.668 88.4873 173.003 82.5562 171.033C76.6252 169.063 72.6208 164.85 70.5431 158.395C71.6541 152.685 74.3367 148.205 78.5909 144.953C84.9626 148.056 90.977 150.141 96.6338 151.208C102.339 152.27 107.444 152.604 111.948 152.21ZM102.68 97.3128C106.167 97.0077 108.182 96.6118 108.725 96.1251C109.804 93.3954 110.222 90.6502 109.981 87.8896C109.731 85.0321 108.842 82.4013 107.314 79.9972C106.638 79.5196 105.197 79.2308 102.992 79.1309C100.836 79.0267 98.4983 79.0848 95.9799 79.3052C92.8318 79.5806 90.7419 79.9586 89.7103 80.4393C88.442 83.2344 87.9265 85.9881 88.1638 88.7003C88.4053 91.4609 89.3364 94.0148 90.957 96.3619C92.0818 96.9467 93.7246 97.3155 95.8852 97.468C98.0901 97.568 100.355 97.5162 102.68 97.3128Z" fill="white"/>
+            </svg>
+          
+          <strong><h1 class="display-1">Grandiose,they are dedicated</h1></strong>
+          <p class="lead">
+            Hire a Grandiose team and <strong>fire them when you’re done</strong>, don’t be afraid, they have work to accomplish !
+          </p>
+    
+          <button type="button" class="btn btn-primary btn-lg">Hire us !</button>
+          <button type="button" class="btn btn-secondary btn-lg">Discover Grandiose</button>
+      </div>
+
+      <div class="container">      
+        <div class="container">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.0032959" width="48" height="48" rx="6" fill="#520DC2"/>
+                <path d="M24.9286 36.1827C25.7429 36.1827 26.4479 36.0916 27.0434 35.9093C27.2258 35.727 27.3534 35.5143 27.4263 35.2712C27.4992 35.0402 27.5357 34.8215 27.5357 34.6148C27.5357 34.3961 27.5175 34.232 27.481 34.1226C27.4445 34.0254 27.3838 33.9342 27.2987 33.8491C26.7882 33.764 26.1866 33.7033 25.4938 33.6668C24.8131 33.6425 24.406 33.6243 24.2723 33.6121C22.5828 33.5392 21.2094 33.4176 20.152 33.2475C19.0946 33.0652 18.1891 32.6762 17.4355 32.0807C16.6819 31.473 16.3052 30.5614 16.3052 29.346C16.3052 28.6896 16.5179 28.0759 16.9433 27.5046C17.3687 26.9212 17.9217 26.4107 18.6023 25.9732C17.2167 25.4019 16.1046 24.545 15.266 23.4025C14.4395 22.2479 14.0262 20.759 14.0262 18.9359C14.0262 17.1249 14.4881 15.6724 15.4118 14.5786C16.3477 13.4725 17.4963 12.6946 18.8576 12.2449C20.2188 11.7952 21.6044 11.5704 23.0143 11.5704C23.9016 11.5704 24.7706 11.6555 25.6214 11.8256C26.4722 11.9958 27.2622 12.2389 27.9915 12.5549L27.2075 7.9241C27.9489 7.4744 28.8727 7.24954 29.9787 7.24954C30.7809 7.24954 31.5284 7.38324 32.2212 7.65063C32.914 7.91803 33.4427 8.30088 33.8073 8.79921C33.8316 8.92075 33.8438 9.11522 33.8438 9.38261C33.8438 10.3793 33.6614 11.4914 33.2968 12.719C32.9443 13.9344 32.3305 14.9128 31.4554 15.6542C31.893 16.5293 32.1118 17.4713 32.1118 18.4801C32.1118 19.9629 31.8261 21.3302 31.2549 22.5821C30.6958 23.834 29.7599 24.855 28.4473 25.645C27.1346 26.4229 25.4269 26.8118 23.3242 26.8118C22.7165 26.8118 22.0845 26.7753 21.4282 26.7024C21.3917 27.3101 21.5376 27.9178 21.8657 28.5256C23.5066 28.2095 24.8314 28.0455 25.8402 28.0333L27.0799 28.0151C28.7572 28.0151 30.0273 28.1184 30.8903 28.325C31.8383 28.5559 32.5432 29.0786 33.0051 29.8929C33.4791 30.7072 33.7161 31.6978 33.7161 32.8646C33.7161 34.6878 33.157 36.2192 32.0388 37.4589C30.9328 38.7108 29.4925 39.6406 27.718 40.2483C25.9556 40.856 24.0839 41.1599 22.1027 41.1599C20.2675 41.1599 18.6327 40.85 17.1985 40.2301C15.7643 39.6102 14.8588 38.4738 14.482 36.8208C14.8831 35.4231 15.6488 34.3657 16.7792 33.6486C18.2985 34.5601 19.7509 35.2104 21.1365 35.5993C22.5342 35.9883 23.7983 36.1827 24.9286 36.1827ZM23.8165 22.3087C24.6916 22.3087 25.2021 22.254 25.3479 22.1446C25.6761 21.4882 25.8402 20.8137 25.8402 20.1209C25.8402 19.4038 25.6761 18.7292 25.3479 18.0972C25.1899 17.9635 24.8375 17.8602 24.2905 17.7873C23.7557 17.7144 23.1723 17.6779 22.5403 17.6779C21.7503 17.6779 21.2216 17.7265 20.9542 17.8237C20.5774 18.4922 20.389 19.1668 20.389 19.8474C20.389 20.5402 20.5652 21.1965 20.9177 21.8164C21.1851 21.9866 21.5862 22.1142 22.121 22.1993C22.6679 22.2722 23.2331 22.3087 23.8165 22.3087Z" fill="white"/>
+                </svg>
+            <strong><h2>Designed to help</h2></strong>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-sunglasses" viewBox="0 0 16 16"> <path d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A2 2 0 0 0 8 6a2 2 0 0 0-1.112.338A2 2 0 0 0 5 5zm0 1h.941c.264 0 .348.356.112.474l-.457.228a2 2 0 0 0-.894.894l-.228.457C2.356 8.289 2 8.205 2 7.94V7a1 1 0 0 1 1-1"/></svg>
+                <div class="container">
+                    <p class="h4">Brand design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula.</p>
+                    <button type="button" class="btn btn-outline-primary btn-sm">I need an identity !</button>
+                  </div>
+            </div>
+              <div class="col-6 col-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16"><path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/></svg>
+                <div class="container">
+                    <p class="h4">SEO & marketing</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula.</p>
+                    <button type="button" class="btn btn-outline-primary btn-sm">Make me the first !</button>
+                  </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+                <div class="container">
+                    <p class="h4">Creative Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula.</p>
+                    <button type="button" class="btn btn-outline-primary btn-sm">I need innovation !</button>
+                  </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/></svg>
+                <div class="container">
+                    <p class="h4">AI consultant</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula.</p>
+                    <button type="button" class="btn btn-outline-primary btn-sm">Let’s prompt !</button>
+                  </div>
+              </div>
+            </div>
+              </div>
+      </div>
+
+      <div class="container"> 
+        <div class="container">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.0032959" width="48" height="48" rx="6" fill="#520DC2"/>
+                <path d="M24.9286 36.1827C25.7429 36.1827 26.4479 36.0916 27.0434 35.9093C27.2258 35.727 27.3534 35.5143 27.4263 35.2712C27.4992 35.0402 27.5357 34.8215 27.5357 34.6148C27.5357 34.3961 27.5175 34.232 27.481 34.1226C27.4445 34.0254 27.3838 33.9342 27.2987 33.8491C26.7882 33.764 26.1866 33.7033 25.4938 33.6668C24.8131 33.6425 24.406 33.6243 24.2723 33.6121C22.5828 33.5392 21.2094 33.4176 20.152 33.2475C19.0946 33.0652 18.1891 32.6762 17.4355 32.0807C16.6819 31.473 16.3052 30.5614 16.3052 29.346C16.3052 28.6896 16.5179 28.0759 16.9433 27.5046C17.3687 26.9212 17.9217 26.4107 18.6023 25.9732C17.2167 25.4019 16.1046 24.545 15.266 23.4025C14.4395 22.2479 14.0262 20.759 14.0262 18.9359C14.0262 17.1249 14.4881 15.6724 15.4118 14.5786C16.3477 13.4725 17.4963 12.6946 18.8576 12.2449C20.2188 11.7952 21.6044 11.5704 23.0143 11.5704C23.9016 11.5704 24.7706 11.6555 25.6214 11.8256C26.4722 11.9958 27.2622 12.2389 27.9915 12.5549L27.2075 7.9241C27.9489 7.4744 28.8727 7.24954 29.9787 7.24954C30.7809 7.24954 31.5284 7.38324 32.2212 7.65063C32.914 7.91803 33.4427 8.30088 33.8073 8.79921C33.8316 8.92075 33.8438 9.11522 33.8438 9.38261C33.8438 10.3793 33.6614 11.4914 33.2968 12.719C32.9443 13.9344 32.3305 14.9128 31.4554 15.6542C31.893 16.5293 32.1118 17.4713 32.1118 18.4801C32.1118 19.9629 31.8261 21.3302 31.2549 22.5821C30.6958 23.834 29.7599 24.855 28.4473 25.645C27.1346 26.4229 25.4269 26.8118 23.3242 26.8118C22.7165 26.8118 22.0845 26.7753 21.4282 26.7024C21.3917 27.3101 21.5376 27.9178 21.8657 28.5256C23.5066 28.2095 24.8314 28.0455 25.8402 28.0333L27.0799 28.0151C28.7572 28.0151 30.0273 28.1184 30.8903 28.325C31.8383 28.5559 32.5432 29.0786 33.0051 29.8929C33.4791 30.7072 33.7161 31.6978 33.7161 32.8646C33.7161 34.6878 33.157 36.2192 32.0388 37.4589C30.9328 38.7108 29.4925 39.6406 27.718 40.2483C25.9556 40.856 24.0839 41.1599 22.1027 41.1599C20.2675 41.1599 18.6327 40.85 17.1985 40.2301C15.7643 39.6102 14.8588 38.4738 14.482 36.8208C14.8831 35.4231 15.6488 34.3657 16.7792 33.6486C18.2985 34.5601 19.7509 35.2104 21.1365 35.5993C22.5342 35.9883 23.7983 36.1827 24.9286 36.1827ZM23.8165 22.3087C24.6916 22.3087 25.2021 22.254 25.3479 22.1446C25.6761 21.4882 25.8402 20.8137 25.8402 20.1209C25.8402 19.4038 25.6761 18.7292 25.3479 18.0972C25.1899 17.9635 24.8375 17.8602 24.2905 17.7873C23.7557 17.7144 23.1723 17.6779 22.5403 17.6779C21.7503 17.6779 21.2216 17.7265 20.9542 17.8237C20.5774 18.4922 20.389 19.1668 20.389 19.8474C20.389 20.5402 20.5652 21.1965 20.9177 21.8164C21.1851 21.9866 21.5862 22.1142 22.121 22.1993C22.6679 22.2722 23.2331 22.3087 23.8165 22.3087Z" fill="white"/>
+                </svg>
+            <strong><h2>Your questions</h2></strong>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What are these Grandiose people ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    You tell me I can hire as many people as I need ?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How much does this costs ?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="container"> 
+        <div class="container">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.0032959" width="48" height="48" rx="6" fill="#520DC2"/>
+                <path d="M24.9286 36.1827C25.7429 36.1827 26.4479 36.0916 27.0434 35.9093C27.2258 35.727 27.3534 35.5143 27.4263 35.2712C27.4992 35.0402 27.5357 34.8215 27.5357 34.6148C27.5357 34.3961 27.5175 34.232 27.481 34.1226C27.4445 34.0254 27.3838 33.9342 27.2987 33.8491C26.7882 33.764 26.1866 33.7033 25.4938 33.6668C24.8131 33.6425 24.406 33.6243 24.2723 33.6121C22.5828 33.5392 21.2094 33.4176 20.152 33.2475C19.0946 33.0652 18.1891 32.6762 17.4355 32.0807C16.6819 31.473 16.3052 30.5614 16.3052 29.346C16.3052 28.6896 16.5179 28.0759 16.9433 27.5046C17.3687 26.9212 17.9217 26.4107 18.6023 25.9732C17.2167 25.4019 16.1046 24.545 15.266 23.4025C14.4395 22.2479 14.0262 20.759 14.0262 18.9359C14.0262 17.1249 14.4881 15.6724 15.4118 14.5786C16.3477 13.4725 17.4963 12.6946 18.8576 12.2449C20.2188 11.7952 21.6044 11.5704 23.0143 11.5704C23.9016 11.5704 24.7706 11.6555 25.6214 11.8256C26.4722 11.9958 27.2622 12.2389 27.9915 12.5549L27.2075 7.9241C27.9489 7.4744 28.8727 7.24954 29.9787 7.24954C30.7809 7.24954 31.5284 7.38324 32.2212 7.65063C32.914 7.91803 33.4427 8.30088 33.8073 8.79921C33.8316 8.92075 33.8438 9.11522 33.8438 9.38261C33.8438 10.3793 33.6614 11.4914 33.2968 12.719C32.9443 13.9344 32.3305 14.9128 31.4554 15.6542C31.893 16.5293 32.1118 17.4713 32.1118 18.4801C32.1118 19.9629 31.8261 21.3302 31.2549 22.5821C30.6958 23.834 29.7599 24.855 28.4473 25.645C27.1346 26.4229 25.4269 26.8118 23.3242 26.8118C22.7165 26.8118 22.0845 26.7753 21.4282 26.7024C21.3917 27.3101 21.5376 27.9178 21.8657 28.5256C23.5066 28.2095 24.8314 28.0455 25.8402 28.0333L27.0799 28.0151C28.7572 28.0151 30.0273 28.1184 30.8903 28.325C31.8383 28.5559 32.5432 29.0786 33.0051 29.8929C33.4791 30.7072 33.7161 31.6978 33.7161 32.8646C33.7161 34.6878 33.157 36.2192 32.0388 37.4589C30.9328 38.7108 29.4925 39.6406 27.718 40.2483C25.9556 40.856 24.0839 41.1599 22.1027 41.1599C20.2675 41.1599 18.6327 40.85 17.1985 40.2301C15.7643 39.6102 14.8588 38.4738 14.482 36.8208C14.8831 35.4231 15.6488 34.3657 16.7792 33.6486C18.2985 34.5601 19.7509 35.2104 21.1365 35.5993C22.5342 35.9883 23.7983 36.1827 24.9286 36.1827ZM23.8165 22.3087C24.6916 22.3087 25.2021 22.254 25.3479 22.1446C25.6761 21.4882 25.8402 20.8137 25.8402 20.1209C25.8402 19.4038 25.6761 18.7292 25.3479 18.0972C25.1899 17.9635 24.8375 17.8602 24.2905 17.7873C23.7557 17.7144 23.1723 17.6779 22.5403 17.6779C21.7503 17.6779 21.2216 17.7265 20.9542 17.8237C20.5774 18.4922 20.389 19.1668 20.389 19.8474C20.389 20.5402 20.5652 21.1965 20.9177 21.8164C21.1851 21.9866 21.5862 22.1142 22.121 22.1993C22.6679 22.2722 23.2331 22.3087 23.8165 22.3087Z" fill="white"/>
+                </svg>
+            <strong><h2>Discover our latest Grandiose collaborators</h2></strong>
+        </div>
+
+        <div class="container">
+            <button type="button" class="btn btn-primary">Grandiose creatives</button>
+            <button type="button" class="btn btn-primary">Grandiose writers</button>
+            <button type="button" class="btn btn-primary">Grandiose SEO</button>
+        </div>
+
+        <div class="container">
+          <div class="row">
+          <div class="col" style="width: 18rem;">
+            <img src="Face-Nathaniel.png" class="card-img-top" alt="...">
+            <div class="container-fluid">
+              <span class="badge rounded-pill text-bg-primary">He’ll break you mind</span>
+              <h5 class="title">Nathaniel Faraday</h5>
+              <p class="text">Condimentum ultrices vel nulla gravida lorem. Suspendisse sapien tristique at a leo turpis. Amet eu accumsan porttitor lectus sit viverra malesuada est. Laoreet viverra malesuada amet vitae odio cras.</p>
+            </div>
+          </div>
+          <div class="col" style="width: 18rem;">
+            <img src="Face-Natiah.png" class="card-img-top" alt="...">
+            <div class="container-fluid">
+              <span class="badge rounded-pill text-bg-primary">The Force</span>
+              <h5 class="title">Natiah Delonghi</h5>
+              <p class="text">Condimentum ultrices vel nulla gravida lorem. Suspendisse sapien tristique at a leo turpis. Amet eu accumsan porttitor lectus sit viverra malesuada est. Laoreet viverra malesuada amet vitae odio cras.</p>
+            </div>
+          </div>
+          <div class="col" style="width: 18rem;">
+            <img src="Face-Nathalia.png" class="card-img-top" alt="...">
+            <div class="container-fluid">
+              <span class="badge rounded-pill text-bg-primary">Blond stamina</span>
+              <h5 class="title">Nathalia Erzigova</h5>
+              <p class="text">Condimentum ultrices vel nulla gravida lorem. Suspendisse sapien tristique at a leo turpis. Amet eu accumsan porttitor lectus sit viverra malesuada est. Laoreet viverra malesuada amet vitae odio cras.</p>
+            </div>
+          </div>
+          <div class="col" style="width: 18rem;">
+            <img src="Face-Albaneta.png" class="card-img-top" alt="...">
+            <div class="container-fluid">
+              <span class="badge rounded-pill text-bg-primary">Gen’z, they know something</span>
+              <h5 class="title">Albaneta Duchamp</h5>
+              <p class="text">Condimentum ultrices vel nulla gravida lorem. Suspendisse sapien tristique at a leo turpis. Amet eu accumsan porttitor lectus sit viverra malesuada est. Laoreet viverra malesuada amet vitae odio cras.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+       
       </div>
     </div>
-  </div>
 
-  <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect y="16.7339" width="192" height="192" rx="24" transform="rotate(-5 0 16.7339)" fill="#520DC2"/>
-    <path d="M111.948 152.21C115.193 151.926 117.97 151.317 120.28 150.383C120.943 149.593 121.377 148.701 121.583 147.707C121.793 146.761 121.862 145.877 121.79 145.054C121.714 144.182 121.584 143.534 121.4 143.111C121.221 142.736 120.947 142.394 120.579 142.085C118.515 141.924 116.096 141.892 113.323 141.988C110.602 142.128 108.973 142.198 108.436 142.196C101.679 142.494 96.1638 142.489 91.8909 142.179C87.6138 141.821 83.87 140.587 80.6596 138.477C77.4449 136.318 75.6257 132.817 75.202 127.974C74.9732 125.358 75.6068 122.838 77.1028 120.414C78.5945 117.941 80.6202 115.714 83.1798 113.733C77.4594 111.94 72.7292 108.913 68.9891 104.653C65.2931 100.34 63.1274 94.5509 62.4918 87.2861C61.8605 80.0697 63.1945 74.121 66.494 69.4401C69.8377 64.7066 74.1433 61.2065 79.4109 58.9399C84.6785 56.6734 90.1214 55.2943 95.7395 54.8028C99.275 54.4935 102.768 54.5296 106.217 54.911C109.667 55.2924 112.9 55.9857 115.916 56.9907L111.177 38.8114C113.975 36.7609 117.577 35.5429 121.985 35.1573C125.181 34.8776 128.206 35.1498 131.06 35.9738C133.914 36.7978 136.154 38.139 137.781 39.9976C137.92 40.4735 138.036 41.2442 138.13 42.3097C138.477 46.2811 138.138 50.7762 137.113 55.7949C136.133 60.761 134.028 64.8738 130.799 68.1332C132.848 71.4678 134.048 75.145 134.4 79.1648C134.917 85.0735 134.255 90.6217 132.415 95.8094C130.624 100.993 127.251 105.387 122.295 108.993C117.336 112.55 110.667 114.695 102.288 115.428C99.8664 115.64 97.3353 115.715 94.6945 115.654C94.7611 118.088 95.5541 120.459 97.0736 122.766C103.502 120.935 108.724 119.819 112.739 119.419L117.673 118.914C124.357 118.329 129.454 118.298 132.964 118.821C136.823 119.41 139.814 121.247 141.938 124.331C144.111 127.411 145.401 131.275 145.808 135.925C146.443 143.19 144.749 149.487 140.726 154.817C136.755 160.191 131.34 164.398 124.48 167.438C117.67 170.474 110.317 172.338 102.423 173.028C95.1095 173.668 88.4873 173.003 82.5562 171.033C76.6252 169.063 72.6208 164.85 70.5431 158.395C71.6541 152.685 74.3367 148.205 78.5909 144.953C84.9626 148.056 90.977 150.141 96.6338 151.208C102.339 152.27 107.444 152.604 111.948 152.21ZM102.68 97.3128C106.167 97.0077 108.182 96.6118 108.725 96.1251C109.804 93.3954 110.222 90.6502 109.981 87.8896C109.731 85.0321 108.842 82.4013 107.314 79.9972C106.638 79.5196 105.197 79.2308 102.992 79.1309C100.836 79.0267 98.4983 79.0848 95.9799 79.3052C92.8318 79.5806 90.7419 79.9586 89.7103 80.4393C88.442 83.2344 87.9265 85.9881 88.1638 88.7003C88.4053 91.4609 89.3364 94.0148 90.957 96.3619C92.0818 96.9467 93.7246 97.3155 95.8852 97.468C98.0901 97.568 100.355 97.5162 102.68 97.3128Z" fill="white"/>
-    </svg>
     
 </body>
 </html>
