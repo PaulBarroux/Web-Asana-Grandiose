@@ -9,30 +9,32 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     :root {
-      --indigo-700: #3D0A91;
-      --indigo-500: #6610F2;
-      --indigo-600: #520D>C2;
-      --indigo-400: #8540F5;
-      --indigo-100: #E0CFFC;
-      --white: #FFFFFF;
-      --purple-700: #432874;
+      --Blog-Blue: #9EC5FE;
+      --Blog-Green: #A3CFBB;
+      --Blog-Orange: #FECBA1;
+      --Blog-Pink: #EFADCE;
+      --Blog-Purple: #C29FFA;
+      --Grey-600: #6C757D;
+      --Grey-800: #343A40;
+      --Off-Blue: #152536;
+      --Off-White: #E9ECEF;
       --Primary: #7749F8;
       --Primary-Dark: #5227CC;
       --Primary-Light: #EBE5FC;
-      --Grey-600: #6C757D;
-      --Grey-800: #343A40;
       --Stroke-Input: #CED4DA;
+      --indigo-100: #E0CFFC;
+      --indigo-400: #8540F5;
+      --indigo-500: #6610F2;
+      --indigo-600: #520DC2;
+      --indigo-700: #3D0A91;
+      --purple-700: #432874;
+      --white: #FFFFFF;
     }
 
     @media (min-width: 992px) {
       .modal-dialog.custom-width {
         max-width: 623px;
       }
-    }
-
-    .padded-section {
-      padding-left: 72px;
-      padding-right: 72px;
     }
 
     .Footers {
@@ -46,48 +48,57 @@
       left: 918px;
     }
 
-    .bg-purple {
-      background-color: var(--indigo-700);
+    .badge-off-white {
+      background-color: var(--Off-White);
+      color: var(--Grey-800);
     }
 
-    .text-purple {
-      color: var(--indigo-700);
+    .bg-blog-blue,
+    .bg-blog-green,
+    .bg-blog-orange,
+    .bg-blog-pink,
+    .bg-blog-purple {
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
     }
 
-    .border-purple {
-      border-color: var(--indigo-700);
+    .bg-blog-blue {
+      background-color: var(--Blog-Blue);
     }
 
-    .text-indigo-600 {
-      color: var(--indigo-600);
+    .bg-blog-green {
+      background-color: var(--Blog-Green);
     }
 
-    .text-indigo-400 {
-      color: var(--indigo-400);
+    .bg-blog-orange {
+      background-color: var(--Blog-Orange);
     }
 
-    .text-primary-dark {
-      color: var(--Primary-Dark);
+    .bg-blog-pink {
+      background-color: var(--Blog-Pink);
     }
 
-    .bg-primary-dark {
-      background-color: var(--Primary-Dark);
-    }
-
-    .bg-primary {
-      background-color: var(--Primary);
-    }
-
-    .nav-link.active {
-      color: var(--Primary-Dark) !important;
-    }
-
-    .text-purple-700 {
-      color: var(--purple-700);
+    .bg-blog-purple {
+      background-color: var(--Blog-Purple);
     }
 
     .bg-indigo-100 {
       color: var(--indigo-100);
+    }
+
+    .bg-indigo-600 {
+      background-color: var(--indigo-600);
+    }
+
+    .bg-off-white {
+      background-color: var(--Off-White);
+    }
+
+    .bg-primary {
+      background-color: var(--Primary);
     }
 
     .bg-primary-custom {
@@ -95,10 +106,33 @@
       color: var(--white);
     }
 
+    .bg-primary-dark {
+      background-color: var(--Primary-Dark);
+    }
+
     .bg-primary-light {
       background-color: var(--Primary-Light);
       color: var(--Primary-Dark);
       border-color: transparent;
+    }
+
+    .bg-purple {
+      background-color: var(--indigo-700);
+    }
+
+    .border-purple {
+      border-color: var(--indigo-700);
+    }
+
+    .btn-outline-primary {
+      color: var(--Primary);
+      border-color: var(--Primary);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--Primary-Dark);
+      color: var(--white);
+      border-color: var(--Primary-Dark);
     }
 
     .btn-primary-custom {
@@ -131,21 +165,75 @@
       border: none;
     }
 
-    .btn-outline-primary {
-      color: var(--Primary);
+    .nav-link.active {
+      color: var(--Primary-Dark) !important;
+    }
+
+    .pagination .page-link {
+      color: var(--Grey-600);
+      background-color: var(--white);
+      border: 1px solid var(--Off-White);
+    }
+
+    .pagination .page-item.active .page-link {
+      color: var(--white);
+      background-color: var(--Primary);
       border-color: var(--Primary);
     }
 
-    .btn-outline-primary:hover {
-      background-color: var(--Primary-Dark);
+    .pagination .page-link:hover {
+      color: var(--Primary-Dark);
+      background-color: var(--Off-White);
+      border-color: var(--Off-White);
+    }
+
+    .padded-section {
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+
+    .text-grey-600 {
+      color: var(--Grey-600);
+    }
+
+    .text-indigo-400 {
+      color: var(--indigo-400);
+    }
+
+    .text-indigo-600 {
+      color: var(--indigo-600);
+    }
+
+    .text-off-blue {
+      color: var(--Off-Blue);
+    }
+
+    .text-primary-dark {
+      color: var(--Primary-Dark);
+    }
+
+    .text-purple {
+      color: var(--indigo-700);
+    }
+
+    .text-purple-700 {
+      color: var(--purple-700);
+    }
+
+    .text-white {
       color: var(--white);
-      border-color: var(--Primary-Dark);
+    }
+
+    .toast-primary-custom {
+      background-color: var(--Primary);
+      color: var(--white);
     }
 
     .w-90 {
       width: 90%;
     }
   </style>
+
 
 </head>
 
@@ -178,15 +266,20 @@
     </div>
   </nav>
 
-  <!-- TOAST -->
-  <div class="toast align-items-center position-absolute m-3" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        Hey, welcome back to Grandiose !
+  <!-- TOAST CONTAINER -->
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100">
+    <div id="welcomeToast" class="toast toast-primary-custom align-items-center" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Hey, welcome back to Grandiose!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
       </div>
-      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
   </div>
+
 
   <!-- HERO SECTION -->
   <section class="py-5 padded-section">
@@ -619,11 +712,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <label for="fullName" class="form-label">Your full name</label>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="fullName" placeholder="John Grandiose">
-            <label for="fullName">Eg. John Grandiose</label>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Your full name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Eg. John Grandiose">
           </div>
+
 
           <div class="mb-3">
             <label for="emailAddress" class="form-label">Email address</label>
@@ -646,26 +739,70 @@
           </div>
 
           <div class="mb-3">
-            <label class="form-label">What profiles do you need?</label>
+            <label class="form-label mb-0">What profiles do you need?</label>
             <p><small>The number in the badge indicates how many people are available to hire</small></p>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="profileCreatives">
-              <label class="form-check-label" for="profileCreatives">
-                Creatives <span class="badge text-bg-primary">109</span>
-              </label>
-              <p><small>You want a team of designers</small></p>
+            <div class="d-flex align-items-center gap-2 py-2 px-3 border-bottom"
+              style="border-bottom-width: 2px; border-color: var(--bs-gray-300);">
+              <div>
+                <input class="form-check-input" type="checkbox" id="profileCreatives1">
+              </div>
+              <div class="flex-grow-1">
+                <label class="form-label h6" for="profileCreatives1">Creatives</label>
+                <p class="mb-0"><small>You want a team of designers</small></p>
+              </div>
+              <div>
+                <span class="badge bg-primary-custom">109</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 py-2 px-3 border-bottom"
+              style="border-bottom-width: 2px; border-color: var(--bs-gray-300);">
+              <div>
+                <input class="form-check-input" type="checkbox" id="profileCreatives2">
+              </div>
+              <div class="flex-grow-1">
+                <label class="form-label h6" for="profileCreatives2">SEO and search engines geeks</label>
+                <p class="mb-0"><small>You want them to find you</small></p>
+              </div>
+              <div>
+                <span class="badge bg-primary-custom">1 209</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 py-2 px-3" style="border-bottom: 2px solid var(--bs-gray-300);">
+              <div>
+                <input class="form-check-input" type="checkbox" id="profileCreatives3">
+              </div>
+              <div class="flex-grow-1">
+                <label class="form-label h6" for="profileCreatives3">Techs, devs, architects</label>
+                <p class="mb-0"><small>Brilliant minds at your service</small></p>
+              </div>
+              <div>
+                <span class="badge bg-primary-custom">290</span>
+              </div>
             </div>
           </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Become Grandiose !</button>
+          <button type="button" class="btn btn-primary-custom">Become Grandiose !</button>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const toastEl = document.querySelector('.toast');
+      if (toastEl) {
+        const toast = new bootstrap.Toast(toastEl);
+        toast.show();
+      }
+    });
+  </script>
 </body>
 
 </html>
