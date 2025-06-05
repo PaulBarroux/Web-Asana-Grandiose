@@ -8,14 +8,43 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <style>
+    :root {
+      --indigo-700: #3D0A91;
+      --indigo-500: #6610F2;
+      --indigo-600: #520DC2;
+      --indigo-400: #8540F5;
+      --indigo-100: #E0CFFC;
+      --white: #FFFFFF;
+      --Off-White: #E9ECEF;
+      --purple-700: #432874;
+      --Primary: #7749F8;
+      --Primary-Dark: #5227CC;
+      --Primary-Light: #EBE5FC;
+      --Grey-600: #6C757D;
+      --Grey-800: #343A40;
+      --Stroke-Input: #CED4DA;
+      --Off-Blue: #152536;
+      --Blog-Blue: #9EC5FE;
+      --Blog-Purple: #C29FFA;
+      --Blog-Pink: #EFADCE;
+      --Blog-Orange: #FECBA1;
+      --Blog-Green: #A3CFBB;
+    }
+
+    @media (min-width: 992px) {
+      .modal-dialog.custom-width {
+        max-width: 623px;
+      }
+    }
+
     .padded-section {
       padding-left: 72px;
       padding-right: 72px;
     }
 
     .Footers {
-      width: 1440;
-      height: 454;
+      width: 1440px;
+      height: 454px;
       padding-right: 60px;
       padding-bottom: 80px;
       padding-left: 60px;
@@ -24,16 +53,199 @@
       left: 918px;
     }
 
+    .text-off-blue {
+      color: var(--Off-Blue);
+    }
+
+    .text-grey-600 {
+      color: var(--Grey-600);
+    }
+
     .bg-purple {
-      background-color: #3D0A91;
+      background-color: var(--indigo-700);
+    }
+
+    .bg-off-white {
+      background-color: var(--Off-White);
     }
 
     .text-purple {
-      color: #3D0A91;
+      color: var(--indigo-700);
+    }
+
+    .border-purple {
+      border-color: var(--indigo-700);
+    }
+
+    .text-indigo-600 {
+      color: var(--indigo-600);
+    }
+
+    .bg-indigo-600 {
+      background-color: var(--indigo-600);
+    }
+
+    .text-indigo-400 {
+      color: var(--indigo-400);
+    }
+
+    .text-primary-dark {
+      color: var(--Primary-Dark);
+    }
+
+    .bg-primary-dark {
+      background-color: var(--Primary-Dark);
+    }
+
+    .bg-primary {
+      background-color: var(--Primary);
+    }
+
+    .nav-link.active {
+      color: var(--Primary-Dark) !important;
+    }
+
+    .text-purple-700 {
+      color: var(--purple-700);
+    }
+
+    .bg-indigo-100 {
+      color: var(--indigo-100);
+    }
+
+    .badge-off-white {
+      background-color: var(--Off-White);
+      color: var(--Grey-800);
+    }
+
+    .text-white {
+      color: var(--white);
+    }
+
+    .bg-primary-custom {
+      background-color: var(--Primary);
+      color: var(--white);
+    }
+
+    .bg-primary-light {
+      background-color: var(--Primary-Light);
+      color: var(--Primary-Dark);
+      border-color: transparent;
+    }
+
+    .btn-primary-custom {
+      background-color: var(--Primary);
+      color: var(--white);
+      border: none;
+    }
+
+    .btn-primary-custom:hover {
+      background-color: var(--Primary-Dark);
+      color: var(--white);
+      border-color: var(--Primary-Dark);
+    }
+
+    .btn-primary-dark-custom {
+      background-color: var(--Primary-Dark);
+      color: var(--white);
+      border: none;
+    }
+
+    .bg-blog-blue {
+      background-color: var(--Blog-Blue);
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position:
+        center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+    }
+
+    .bg-blog-purple {
+      background-color: var(--Blog-Purple);
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position:
+        center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+    }
+
+    .bg-blog-pink {
+      background-color: var(--Blog-Pink);
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position:
+        center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+    }
+
+    .bg-blog-orange {
+      background-color: var(--Blog-Orange);
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position:
+        center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+    }
+
+    .bg-blog-green {
+      background-color: var(--Blog-Green);
+      background-image: url('G-Blog post.png');
+      background-size: cover;
+      background-position:
+        center;
+      background-repeat: no-repeat;
+      aspect-ratio: 1 / 1;
+    }
+
+
+    .btn-primary-dark-custom:hover {
+      background-color: var(--Primary-Dark);
+      color: var(--white);
+      border: none;
+    }
+
+    .btn-secondary-custom {
+      background-color: var(--Primary-Light);
+      color: var(--Primary-Dark);
+      border: none;
+    }
+
+    .btn-outline-primary {
+      color: var(--Primary);
+      border-color: var(--Primary);
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--Primary-Dark);
+      color: var(--white);
+      border-color: var(--Primary-Dark);
     }
 
     .w-90 {
       width: 90%;
+    }
+
+    .pagination .page-link {
+      color: var(--Grey-600);
+      background-color: var(--white);
+      border: 1px solid var(--Off-White);
+    }
+
+    .pagination .page-item.active .page-link {
+      color: var(--white);
+      background-color: var(--Primary);
+      border-color: var(--Primary);
+    }
+
+    .pagination .page-link:hover {
+      color: var(--Primary-Dark);
+      /* Optional hover effect */
+      background-color: var(--Off-White);
+      border-color: var(--Off-White);
     }
   </style>
 
@@ -44,7 +256,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color: #8540F5;">GRANDIOSE</a>
+        <a class="navbar-brand text-indigo-400" href="index.html">GRANDIOSE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,16 +264,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #5227CC;">Welcome</a>
+              <a class="nav-link" href="index.html">Welcome</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hire Us !</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#hireUsModal">Hire Us !</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="Grandiose Portfolio.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link active" aria-current="page" href="Grandiose Blog.html">Blog</a>
             </li>
           </ul>
         </div>
@@ -88,8 +300,8 @@
           fill="white" />
       </svg>
       <div>
-        <h1 class="display-1 fw-bold">The voices of Grandiose</h1>
-        <p class="lead">Yes they write, read it you’ll learn something</p>
+        <h1 class="display-1 fw-bold text-purple-700">The voices of Grandiose</h1>
+        <p class="lead text-purple-700">Yes they write, read it you’ll learn something</p>
       </div>
     </section>
 
@@ -97,20 +309,17 @@
     <div class="d-flex flex-column gap-6">
       <!-- BUTTON GROUP -->
       <div class="d-flex flex-wrap gap-3">
-        <button class="btn btn-primary btn-lg" style="background-color: #5227CC; color: white;">Grandiose
+        <button class="btn btn-primary-dark-custom btn-lg">Grandiose
           creatives</button>
-        <button class="btn btn-secondary btn-lg"
-          style="background-color: #7749F8; color: white; border-color: transparent;">Grandiose writers</button>
-        <button class="btn btn-secondary btn-lg"
-          style="background-color: #7749F8; color: white; border-color: transparent;">Grandiose SEO</button>
+        <button class="btn btn-primary-custom  btn-lg">Grandiose writers</button>
+        <button class="btn btn-primary-custom  btn-lg">Grandiose SEO</button>
       </div>
 
       <!-- BLOG GRID SECTION -->
       <section class="row g-4 py-5">
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #9EC5FE; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-blue">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>How to sell drugs online, fast</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -118,9 +327,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #C29FFA; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-purple">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>Do what I say, not what I do</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -128,9 +336,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #EFADCE; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-pink">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>Learn by doing, do it now</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -138,9 +345,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #FECBA1; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-orange">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>Looking for a job ? Let others do this for you</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -148,9 +354,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #9EC5FE; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-blue">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>Grandiose, the best thing that happened to me</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -158,9 +363,8 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="rounded-4 position-relative p-4 text-dark"
-            style="background-color: #A3CFBB; background-image: url('G-Blog post.png'); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 1 / 1;">
-            <span class="badge rounded-pill bg-light text-dark mb-2">Badges</span>
+          <div class="rounded-4 position-relative p-4 text-dark bg-blog-green">
+            <span class="badge rounded-pill badge-off-white mb-2">Badges</span>
             <p class="mb-1">Preamble</p>
             <h1><strong>Get a life, get a job, get a dog</strong></h1>
             <p class="lead position-absolute m-0" style="right: 32px; bottom: 32px;">Read</p>
@@ -169,56 +373,113 @@
       </section>
 
       <!-- PAGINATION -->
-      <div class="rounded-3 p-3 mb-5" style="background-color: #F8F9FA;">
-        <nav aria-label="..." class="d-flex justify-content-end">
-          <ul class="pagination mb-0">
-            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
-            <li class="page-item active">
-              <a class="page-link" href="#" aria-current="page">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
+      <div>
+        <div class="rounded-3 p-3 mb-5 bg-off-white">
+          <nav aria-label="..." class="d-flex justify-content-end">
+            <ul class="pagination mb-0">
+              <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+
     </div>
-</main>
+  </main>
 
-    <footer class="position-relative bg-transparent" style="height: 454px;">
-      <!-- Rectangle violet en fond -->
-      <div class="position-absolute bottom-0 start-0 w-100 bg-purple " style="height: 322px;"></div>
+  <footer class="position-relative bg-transparent" style="height: 454px;">
+    <!-- Rectangle violet en fond -->
+    <div class="position-absolute bottom-0 start-0 w-100 bg-purple " style="height: 322px;"></div>
 
-      <!-- Bloc blanc au premier plan -->
-      <div
-        class="position-absolute top-0 start-50 translate-middle-x w-90 bg-white d-flex flex-column align-items-start"
-        style="width: 90%;height: 374px;border-radius: 16px; padding: 72px 64px;gap: 40px;">
+    <!-- Bloc blanc au premier plan -->
+    <div class="position-absolute top-0 start-50 translate-middle-x w-90 bg-white d-flex flex-column align-items-start"
+      style="width: 90%;height: 374px;border-radius: 16px; padding: 72px 64px;gap: 40px;">
 
-        <!-- Logo + bouton -->
+      <!-- Logo + bouton -->
 
-        <img src="Logo.svg" alt="" style="height: 48px;">
-        <button class="btn btn-primary bg-purple border-0" style="padding: 16px 24px;background-color: #7749F8;">Be
-          Grandiose</button>
+      <img src="Logo.svg" alt="" style="height: 48px;">
+      <button class="btn btn-primary-custom border-0" style="padding: 16px 24px;">Be
+        Grandiose</button>
 
 
-        <!-- Infos des bureaux -->
-        <div class="container-fluid px-0">
+      <!-- Infos des bureaux -->
+      <div class="container-fluid px-0">
 
-          <div class="row text-purple">
-            <div class="col-6 mb-3">
-              <h5 class="fw-bold" style="color: #520DC2;">New York Office</h5>
-              <p class="mb-0" style="color: #3D0A91;">1065 Avenue of the Americas,New York, NY 10018-1878</p>
-            </div>
-            <div class="col-6 mb-3">
-              <h5 class="fw-bold" style="color: #520DC2;">London Office</h5>
-              <p class="mb-0" style="color: #3D0A91;">Swains Lane Highgate, London N6 6PJ England</p>
+        <div class="row text-purple">
+          <div class="col-6 mb-3">
+            <h5 class="fw-bold text-indigo-600">New York Office</h5>
+            <p class="mb-0 text-purple">1065 Avenue of the Americas,New York, NY 10018-1878</p>
+          </div>
+          <div class="col-6 mb-3">
+            <h5 class="fw-bold text-indigo-600">London Office</h5>
+            <p class="mb-0 text-purple">Swains Lane Highgate, London N6 6PJ England</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="hireUsModal" tabindex="-1" aria-labelledby="hireUsModalLabel" aria-hidden="true">
+    <div class="modal-dialog custom-width">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="hireUsModalLabel">Hire us !</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="fullName" class="form-label">Your full name</label>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="fullName" placeholder="John Grandiose">
+            <label for="fullName">Eg. John Grandiose</label>
+          </div>
+
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Eg. john@grandiose.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="projectDescription" class="form-label">Describe your project in a few lines</label>
+            <textarea class="form-control" id="projectDescription" placeholder="Write a message" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Your budget</label>
+            <select class="form-select">
+              <option selected>No scale selected</option>
+              <option value="1">Less than 5,000€</option>
+              <option value="2">5,000–15,000€</option>
+              <option value="3">15,000€+</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">What profiles do you need?</label>
+            <p><small>The number in the badge indicates how many people are available to hire</small></p>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="profileCreatives">
+              <label class="form-check-label" for="profileCreatives">
+                Creatives <span class="badge text-bg-primary">109</span>
+              </label>
+              <p><small>You want a team of designers</small></p>
             </div>
           </div>
         </div>
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Become Grandiose !</button>
+        </div>
       </div>
-    </footer>
-
+    </div>
+  </div>
 </body>
 
 </html>
